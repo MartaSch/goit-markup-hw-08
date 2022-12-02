@@ -1,0 +1,96 @@
+.newsletter{
+    margin-top:60px;
+&__input{
+    width:450px;
+    height:50px;
+    background-color: transparent;
+    border: 1px solid var(--color_10);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:16px;
+    padding-right:0px;
+}
+&__button{
+    position:relative;
+    left:140px;
+    width:200px;
+    height:50px;
+    background-color:var(--color_1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left:12px;
+    border-color: transparent;
+    padding:0;
+    margin-top:20px;
+    margin-bottom:60px;
+    margin-left:0px;
+    cursor: pointer;
+}
+&__button-text{
+    font-weight:700px;
+    font-size:16px;
+    letter-spacing: 0.06em;
+    color:var(--color_3);
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:left;
+    margin-left: 42px;
+}
+&__button-send-icon{
+    position: absolute;
+    top:10px;
+    right:30px;
+    width:24px;
+    height:24px;
+    fill:var(--color_3);
+}
+}
+@media(min-width:768px){
+    .newsletter{
+    display:flex;
+    flex-direction:column;
+    margin-left:166px;
+}
+.newsletter__button{
+    left:128px;
+}
+}
+@media(min-width:1200px){
+    .newsletter{
+        display:inline-block;
+        margin-left:77px;
+    }
+    .newsletter__mail{
+        display:flex;
+    }
+    .newsletter__button{
+        left:12px;
+        bottom:19px;
+    }
+}
+/*@media (min-width:1200px){
+    .newsletter{
+    display: inline-flex;
+    flex-direction:row;
+    margin-top:72px;
+    margin-left:77px;
+    }
+    .newsletter__input{
+        width:358px;
+    }
+    .newsletter__button{
+    position:relative;
+    width:200px;
+    height:50px;
+    background-color:var(--color_1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left:12px;
+    border-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+    left:0px;
+    }
+}*/

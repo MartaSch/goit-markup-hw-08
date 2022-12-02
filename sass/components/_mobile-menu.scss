@@ -1,0 +1,127 @@
+.block{
+    overflow:hidden;
+}
+@media (min-width:768px){
+    .block{
+        overflow: visible;
+    }
+}
+.d-none{
+    display:none;
+}
+.mobile-menu{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: var(--color_3);
+    z-index: 2;
+    padding-left:40px;
+    padding-right:15px;
+&__toggle{
+    background-color: transparent;
+    border-style: none;
+    margin-left: 90%;
+    padding:0px;
+&:hover{
+    background-color: var(--color_1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+}
+&:focus{
+    background-color: var(--color_1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+}
+}
+&__toggle-svg{
+    width:40px;
+    height:40px;
+}
+&__toggle:focus svg{
+    fill: var(--color_1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+}
+__toggle:hover svg{
+    fill: var(--color_1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+}
+&__nav-position{
+    margin-top:0px;
+    margin-bottom:auto;
+    padding-left:0px;
+}
+&__nav-elements{
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    color:var(--color_14);
+&--item:not(:last-child)
+{
+margin-bottom: 32px;
+}
+&:hover{
+    color:var(--color_1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+&:focus{
+    color:var(--color_1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+}
+&__contacts{
+    margin-top:302px;
+    margin-bottom:0px;
+    padding-left:0px;
+&--margin:not(:last-child){
+    margin-bottom:32px;
+}
+}
+&__contacts-telephone{
+    font-weight:500px;
+    font-size:34px;
+    letter-spacing: 0.02em;
+    color:var(--color_1);
+    text-decoration: none;
+}
+&__contacts-mail{
+    font-weight:500px;
+    font-size:24px;
+    letter-spacing: 0.02em;
+    color:var(--color_2);
+    text-decoration: none;
+}
+&__socialmedia{
+    display:flex;
+    margin-top:64px;
+    margin-bottom:48px;
+    padding-left:0px;
+&--item:not(:last-child){
+    margin-right:20px;
+}
+}
+&__socialmedia-elements{
+    font-weight:500px;
+    font-size: 18px;
+    letter-spacing:0.02em;
+    color:var(--color_1);
+    text-decoration: none;
+}
+}
+.mobile-menu__nav-elements--link{
+    text-decoration: none;
+
+}
+
+
