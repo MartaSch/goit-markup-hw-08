@@ -1,10 +1,10 @@
 
 .container{
-    margin:0;
     padding:0 15px;
 &__header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 &__logo{
     display:flex;
@@ -14,12 +14,15 @@
     padding-bottom:15px;
 }
 }
-@media (min-width: 320px) and (max-width: 480px){
+/*@media (min-width: 320px) and (max-width: 480px){
     .container{
-        width:480px;
+        min-width:320px;
     }
+.container__logo{
+    margin-right:0px;
 }
-@media (min-width:481px) and (max-width:767px){
+}*/
+@media (min-width:480px) and (max-width:767px){
     .container{
         width:480px;
     }
@@ -39,7 +42,7 @@
 }
 @media (min-width: 1200px){
     .container{
-        max-width:1200px;
+        width:1200px;
         margin:0 auto;
         padding: 0 15px;
         .header &{
@@ -80,24 +83,24 @@
 .section{
     padding-top:60px;
     padding-bottom:60px;
-    margin:0;
+    margin:0 auto;
 &--background{
-    margin:0;
+    margin:0 auto;
     background-color:var(--color_18);
     }
 }
-@media (min-width: 320px) and (max-width: 480px){
+/*@media (min-width: 320px) and (max-width: 480px){
     .section{
-        width:480px;
+        width:100vw;
         padding-bottom:30px;
     }
 .section__works{
     display:none;
 }
-}
-@media (min-width:481px) and (max-width:767px){
+}*/
+@media (min-width:480px) and (max-width:767px){
     .section{
-        width:480px;
+        width:100vw;
         padding-bottom:30px;
     }
 .section__works{
@@ -106,7 +109,7 @@
 }
 @media (min-width: 768px) and (max-width:1199px){
     .section{
-        width:768px;
+        width:100vw;
     }
 .section__works{
     display:none;
@@ -114,14 +117,13 @@
 }
 @media (min-width:1200px){
     .section{
-        width:1600px;
+        width:100vw;
         margin:0 auto;
         padding-top:94px;
         padding-bottom:94px;
     }
 }
 .footer{
-    margin:0;
     background-color:var(--color_8);
 
 &__container{
@@ -135,19 +137,19 @@
 }
 }
 }
-@media (min-width: 320px) and (max-width: 480px){
+/*@media (min-width: 320px) and (max-width: 480px){
     .footer{
-        width:480px;
+        width:100vw;
     }
-}
-@media (min-width:481px) and (max-width:767px){
+}*/
+@media (min-width:480px) and (max-width:767px){
     .footer{
-        width:480px;
+        width:100vw;
     }
 }
 @media (min-width: 768px) and (max-width:1199px){
     .footer{
-        width:768px;
+        width:100vw;
     }
     .footer__container{
         display:flex;
@@ -161,7 +163,7 @@
 }
 @media (min-width:1200px){
     .footer{
-        width:1600px;
+        width:100vw;
         height:252px;
         margin: 0 auto;
         background-color:var(--color_8);

@@ -1,20 +1,13 @@
-.block{
-    overflow:hidden;
-}
-@media (min-width:768px){
-    .block{
-        overflow: visible;
-    }
-}
+
 .d-none{
     display:none;
 }
 .mobile-menu{
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
-    width:100vw;
-    height:100vh;
+    width:480px;
+    height:796px;
     background-color: var(--color_3);
     z-index: 2;
     padding-left:40px;
@@ -81,7 +74,7 @@ margin-bottom: 32px;
 }
 }
 &__contacts{
-    margin-top:302px;
+    margin-top:200px;
     margin-bottom:0px;
     padding-left:0px;
 &--margin:not(:last-child){

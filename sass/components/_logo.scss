@@ -19,6 +19,11 @@
     color:var(--color_1);
 }
 }
+@media(min-width:320px) and (max-width:479px){
+    .logo-footer{
+        justify-content: center;
+    }
+}
 @media(min-width:768px){
 .logo-footer{
     margin-left:115px;
