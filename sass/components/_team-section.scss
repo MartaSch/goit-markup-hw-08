@@ -1,10 +1,13 @@
-@media(min-width:320px){
+
 .team-section-position{
     display:block;
     padding-left:0px;
     margin-top:0px;
     margin-bottom:30px; 
     padding-top:30px;
+&__item:not(:last-child){
+    margin-bottom: 30px;
+}
 }
 .team-cards{
     box-sizing: border-box;
@@ -16,6 +19,15 @@
     border-radius: 0px 0px 4px 4px;
     margin:0;
 }
+@media(min-width:320px) and (max-width:480px){
+    .team-cards{
+        max-width:100%;
+        height:auto;
+    }
+}
+.team-cards__img{
+    max-width: 100%;
+    height:auto;
 }
 .team-cards__title{
     font-weight: 500; 
@@ -121,5 +133,6 @@ margin-bottom:16px;
         margin:0;
     }
     }
+   
 
 

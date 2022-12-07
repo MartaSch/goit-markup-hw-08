@@ -1,5 +1,7 @@
 
 .container{
+    margin-left:auto;
+    margin-right:auto;
     padding:0 15px;
 &__header{
     display: flex;
@@ -14,20 +16,26 @@
     padding-bottom:15px;
 }
 }
+/*}
 @media (min-width: 320px) and (max-width: 480px){
     .container{
-        min-width:480px;
+        min-width:320px;
     }
 .container__logo{
     margin-right:0px;
 }
+}*/
+@media(min-width:320px) and (max-width:479px){
+    .container{
+        width:100vw;
+    }
 }
-@media (min-width:481px) and (max-width:767px){
+@media (min-width:480px){
     .container{
         width:480px;
     }
 }
-@media (min-width: 768px) and (max-width:1199px){
+@media (min-width: 768px){
     .container{
         width:768px;
         .header &{
@@ -42,7 +50,7 @@
 }
 @media (min-width: 1200px){
     .container{
-        width:1200px;
+        width: 1200px;
         margin:0 auto;
         padding: 0 15px;
         .header &{
@@ -89,7 +97,7 @@
     background-color:var(--color_18);
     }
 }
-@media (min-width: 320px) and (max-width: 480px){
+/*@media (min-width: 320px) and (max-width: 480px){
     .section{
         width:480px;
         padding-bottom:30px;
@@ -97,8 +105,13 @@
 .section__works{
     display:none;
 }
+}*/
+@media(min-width:320px) and (max-width:479px){
+    .section{
+        width:100%;
+    }
 }
-@media (min-width:481px) and (max-width:767px){
+@media (min-width:480px){
     .section{
         width:100vw;
         padding-bottom:30px;
@@ -107,7 +120,7 @@
     display:none;
 }
 }
-@media (min-width: 768px) and (max-width:1199px){
+@media (min-width: 768px){
     .section{
         width:100vw;
     }
@@ -117,7 +130,7 @@
 }
 @media (min-width:1200px){
     .section{
-        width:100vw;
+        width:100%;
         margin:0 auto;
         padding-top:94px;
         padding-bottom:94px;
@@ -137,17 +150,22 @@
 }
 }
 }
-@media (min-width: 320px) and (max-width: 480px){
+/*@media (min-width: 320px) and (max-width: 480px){
     .footer{
         width:480px;
     }
+}*/
+@media(min-width:320px) and (max-width:479px){
+    .footer{
+        max-width:100%;
+    }
 }
-@media (min-width:481px) and (max-width:767px){
+@media (min-width:480px){
     .footer{
         width:100vw;
     }
 }
-@media (min-width: 768px) and (max-width:1199px){
+@media (min-width: 768px){
     .footer{
         width:100vw;
     }
@@ -163,7 +181,7 @@
 }
 @media (min-width:1200px){
     .footer{
-        width:100vw;
+        width:100%;
         height:252px;
         margin: 0 auto;
         background-color:var(--color_8);

@@ -1,10 +1,11 @@
 .container__h1-wrapper{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img_sm.jpg);
-    width:480px;
-    height:400px;
+    max-width:1600px;
     background-size: 480px 400px;
-    margin-left:0px;
-    margin-right:0px;
+    margin:0,auto;
     padding-top:118px;
     padding-bottom:118px;
 }
@@ -13,6 +14,11 @@
 (min-resolution: 2dppx){
 .container__h1-wrapper{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img_sm@2x.jpg);
+    }
+}
+@media (min-width:320px){
+    .container__h1-wrapper{
+        background-position: none;
     }
 }
 @media (min-width: 768px){
@@ -35,7 +41,7 @@
 @media (min-width: 1200px){
     .container__h1-wrapper{
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop_version/Header-img_lg.jpg);
-        width: 1600px;
+        width: 100vw;
         height:600px;
         background-size: 1600px 600px;
         padding-top:200px;

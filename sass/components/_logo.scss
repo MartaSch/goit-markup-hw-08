@@ -21,7 +21,10 @@
 }
 @media(min-width:320px) and (max-width:479px){
     .logo-footer{
+        display: flex;
         justify-content: center;
+        margin-right:auto;
+        margin-left:auto;
     }
 }
 @media(min-width:768px){
