@@ -1,5 +1,15 @@
 .newsletter{
     margin-top:60px;
+    @media(min-width:768px){
+        display:flex;
+        flex-direction:column;
+        margin-left:166px;
+    }
+    @media (min-width:1200px){
+        display:inline-block;
+        margin-left:77px;
+        margin-top:72px;
+    }
 &__title{
     font-weight: 700;
     font-size: 14px;
@@ -9,6 +19,13 @@
     text-align:center;
     margin-top:0px;
     margin-bottom:20px;
+    @media(min-width:768px){
+        margin-right:130px;
+    }
+    @media (min-width:1200px){
+        text-align: start;
+        margin-right:0px;
+    }
 }
 &__input{
     width:450px;
@@ -21,6 +38,12 @@
     padding-bottom:15px;
     padding-left:16px;
     padding-right:0px;
+    @media(min-width:320px) and (max-width:479px){
+        width:100%;
+    }
+    @media (min-width:1200px){
+        width:358px;
+    }
 }
 &__button{
     position:relative;
@@ -37,6 +60,17 @@
     margin-bottom:60px;
     margin-left:0px;
     cursor: pointer;
+    @media(min-width:320px) and (max-width:479px){
+        left:0px;
+        margin-left:25%;
+    }
+    @media(min-width:768px){
+        left:128px;
+    }
+    @media (min-width:1200px){
+        left:12px;
+        bottom:19px;
+    }
 }
 &__button-text{
     font-weight:700px;
@@ -56,47 +90,9 @@
     height:24px;
     fill:var(--color_3);
 }
-}
-@media(min-width:320px) and (max-width:479px){
-    .newsletter__button{
-        left:0px;
-        margin-left:25%;
-    }
-    .newsletter__input{
-        width:100%;
-    }
-}
-@media(min-width:768px){
-    .newsletter{
-    display:flex;
-    flex-direction:column;
-    margin-left:166px;
-}
-.newsletter__title{
-    margin-right:130px;
-}
-.newsletter__button{
-    left:128px;
-}
-}
-@media(min-width:1200px){
-    .newsletter{
-        display:inline-block;
-        margin-left:77px;
-        margin-top:72px;
-    }
-    .newsletter__mail{
+&__mail{
+    @media (min-width:1200px){
         display:flex;
     }
-    .newsletter__input{
-        width:358px;
-    }
-    .newsletter__button{
-        left:12px;
-        bottom:19px;
-    }
-    .newsletter__title{
-        text-align: start;
-        margin-right:0px;
-    }
-    }
+}
+}

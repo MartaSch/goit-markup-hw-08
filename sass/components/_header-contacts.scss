@@ -1,25 +1,23 @@
 .contact-details{
     display:none;
-}
-@media (min-width:768px){
-.contact-details{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
+    @media (min-width:768px){
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media(min-width:1200px){
+        flex-direction:row;
+    }
 }
 .contact-details--item-padding{
     padding-right:25px;
-}    
-}
-@media(min-width:1200px){
-    .contact-details{
-        flex-direction:row;
+    @media (min-width:1200px){
+        padding-right:0px;
     }
+}    
 .contact-details--item:not(:last-child){
+    @media(min-width:1200px){
     margin-right:50px;
-}
-.contact-details--item-padding{
-    padding-right:0px;
 }
 }
 .contact-details__elements{

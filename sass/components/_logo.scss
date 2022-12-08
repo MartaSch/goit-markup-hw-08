@@ -15,26 +15,20 @@
     text-decoration: none;
     margin-left:163px;
     margin-right:163px;
-&--blue{
-    color:var(--color_1);
-}
-}
-@media(min-width:320px) and (max-width:479px){
-    .logo-footer{
+    @media(min-width:320px) and (max-width:479px){
         display: flex;
         justify-content: center;
         margin-right:auto;
         margin-left:auto;
     }
-}
-@media(min-width:768px){
-.logo-footer{
-    margin-left:115px;
-    margin-right:0px;
-}
-}
-@media(min-width:1200px){
-    .logo-footer{
+    @media(min-width:768px){
+        margin-left:115px;
+        margin-right:0px;
+    }
+    @media(min-width:1200px){
         margin-left:0px;
     }
+&--blue{
+    color:var(--color_1);
+}
 }

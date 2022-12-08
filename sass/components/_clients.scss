@@ -7,7 +7,6 @@
     margin-top:0px;
     margin-bottom:0px;
     padding-top: 30px;
-
 }
 .client-section__logo-border{
     box-sizing: border-box;
@@ -16,6 +15,12 @@
     border: 1px solid var(--color_7);
     border-radius: 4px;
     cursor: pointer;
+    @media (min-width:768px){
+        width:226px;
+    }
+    @media (min-width:1200px){
+        width:170px;
+    }
 &:hover{
     border-color:var(--color_1);
     transition-duration: 250ms;
@@ -31,8 +36,13 @@
 }
 .cilents-section__item{
     flex-basis: calc((100% - 30px) /2);
+    @media (min-width:768px){
+        flex-basis: calc((100% - 60px) /3);
+    }
+    @media (min-width){
+        flex-basis: calc((100% - 150px) /6);
+    }
 }
-
 .client-section__logo{
     width:106px;
     height:60.04px;
@@ -40,69 +50,14 @@
     margin-right:52px;
     margin-top:16px; 
     fill:var(--color_2);
-}
-@media(min-width:768px){
-    .clients-section{
-        display:flex;
-        flex-wrap:wrap;
-        gap:30px;
-        padding-left:0px;
-        margin-top:0px;
-        margin-bottom:0px;
-        padding-top: 30px;
-    }
-    .clients-section__item{
-        flex-basis: calc((100% - 60px) /3);
-    }
-    .client-section__logo-border{
-        box-sizing: border-box;
-        width:226px;
-        height:92px;
-        border: 1px solid var(--color_7);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .client-section__logo{
-        width:106px;
-        height:60.04px;
+    @media (min-width:768px){
         margin-left:60px;
         margin-right:60px;
-        margin-top:16px; 
-        fill:var(--color_2);
-}
-}
-@media (min-width:1200px){
-    .clients-section{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:30px;
-    padding-left:0px;
-    margin-top:0px;
-    margin-bottom:0px;
-    padding-top: 30px;
     }
-.client-section__item{
-    flex-basis: calc((100% - 150px) /6);
+    @media (min-width:1200px){
+        margin-left:32px;
+        margin-right:32px;
+    }
 }
-.client-section__logo-border{
-    box-sizing: border-box;
-    width:170px;
-    height:92px;
-    border: 1px solid var(--color_7);
-    border-radius: 4px;
-    cursor: pointer;
-}
-.client-section__logo{
-    width:106px;
-    height:60.04px;
-    margin-left:32px;
-    margin-right:32px;
-    margin-top:16px; 
-    fill:var(--color_2);
-}
-}
-/*
-    
-}*/
+
 

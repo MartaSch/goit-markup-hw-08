@@ -9,50 +9,31 @@
     margin:0,auto;
     padding-top:118px;
     padding-bottom:118px;
+    @media (min-width:320px){
+        background-position: none;
+    }
+    @media (min-width:768px){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img_md.jpg);
+        background-size: 768px 400px;
+    }
+    @media (min-width:1200px){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop_version/Header-img_lg.jpg);
+        max-width:1600px;
+        height:600px;
+        background-size: 1600px 600px;
+        padding-top:200px;
+        padding-bottom:200px;
+}
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution:192dpi),
 (min-resolution: 2dppx){
 .container__h1-wrapper{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header_img_sm@2x.jpg);
-    }
-}
-@media (min-width:320px){
-    .container__h1-wrapper{
-        background-position: none;
-    }
-}
-@media (min-width: 768px){
-.container__h1-wrapper{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img_md.jpg);
-    background-size: 768px 400px;
-}
-}
-@media (min-width: 768px){
-    @media (min-device-pixel-ratio: 2),
-(min-resolution:192dpi),
-(min-resolution: 2dppx){
-    .container__h1-wrapper{
+    @media (min-width:768px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img_md@2x.jpg);
     }
-}
-}
-@media (min-width: 1200px){
-    .container__h1-wrapper{
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop_version/Header-img_lg.jpg);
-        width:100%;
-        height:600px;
-        background-size: 1600px 600px;
-        padding-top:200px;
-        padding-bottom:200px;
-        margin:0,auto;
-}
-}
-@media (min-width1200px){
-    @media (min-device-pixel-ratio: 2),
-(min-resolution:192dpi),
-(min-resolution: 2dppx){
-    .container__h1-wrapper{
+    @media (min-width:1200px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop_version/Header-img_lg@2x.jpg);
     }
 }

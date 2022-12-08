@@ -4,6 +4,9 @@
     background-color:transparent;
     cursor: pointer;
     padding:0px;
+    @media (min-width:768px){
+        display:none;
+    }
 &:hover{
     fill:var(--color_1);
     transition-duration: 250ms;
@@ -23,45 +26,36 @@
 }
 .navigation{
     display:none;
-}
-@media (min-width:768px){
-.menu-button{
-    display:none;
-}
-.navigation{
-    display:flex;
-    flex-grow:1;
-    margin-right:auto;
-&__item:not(:last-child){
-    margin-right:46px;
-}
-&__elements{
-    font-weight: 500; 
-    font-size: 14px;
-    line-height: 1.17;
-    color:var(--color_6);
-    text-decoration: none;
-    position:relative;
-    cursor: pointer;
-}
-&:hover{
-    color:var(--color_1);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0,4, 0, 0.2, 1);
-    transition-property: color;    
-}
-&:focus{
-    color:var(--color_1);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0,4, 0, 0.2, 1);
-    transition-property: color;  
-}
-&--link{
-    text-decoration: none;
-}
+    @media (min-width:768px){
+        display:flex;
+        flex-grow:1;
+        margin-right:auto;
+    }
+    &__item:not(:last-child){
+        @media (min-width:768px){
+             margin-right:46px;
+        }
+    }
+    &__elements{
+        @media (min-width:768px){
+            font-weight: 500; 
+            font-size: 14px;
+            line-height: 1.17;
+            color:var(--color_6);
+            text-decoration: none;
+            position:relative;
+            cursor: pointer;   
+        }
+        &--link{
+            @media (min-width:768px){
+                text-decoration: none;
+            }
+        }
+    }
 }
 .navigation__underline{
     &::after{
+        @media (min-width:768px){
         content: "";
         position:absolute;
         width:100%;
