@@ -28,7 +28,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
 }
-__toggle:hover svg{
+&__toggle:hover svg{
     fill: var(--color_1);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
